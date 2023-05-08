@@ -25,7 +25,7 @@ const Resumo = () => {
     ></span>
   );
   return (
-    <ResumoComponent>
+    <ResumoComponent id="resumo">
       <TituloColorido>Resumo</TituloColorido>
       <ResumoTitulo>Minhas Credênciais</ResumoTitulo>
       <ResumoTexto>
@@ -50,7 +50,7 @@ const Resumo = () => {
             <Grade
               titulo1={"Teste"}
               subtitulo={"Junho, 2022 - Atual"}
-              imagem={"1"}
+              imagem={"2"}
               titulo2={"Professor Docente"}
               texto={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
@@ -66,7 +66,7 @@ const Resumo = () => {
             <Grade
               titulo1={"Let's Code"}
               subtitulo={"Junho, 2022 - Atual"}
-              imagem={"1"}
+              imagem={"3"}
               titulo2={"Professor Docente"}
               texto={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
@@ -77,7 +77,7 @@ const Resumo = () => {
             <Grade
               titulo1={"Teste"}
               subtitulo={"Junho, 2022 - Atual"}
-              imagem={"1"}
+              imagem={"4"}
               titulo2={"Professor Docente"}
               texto={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
@@ -105,7 +105,7 @@ const Resumo = () => {
             <Grade
               titulo1={"Teste"}
               subtitulo={"Junho, 2022 - Atual"}
-              imagem={"1"}
+              imagem={"2"}
               titulo2={"Professor Docente"}
               texto={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
@@ -133,7 +133,7 @@ const Resumo = () => {
             <Grade
               titulo1={"Teste"}
               subtitulo={"Junho, 2022 - Atual"}
-              imagem={"1"}
+              imagem={"2"}
               titulo2={"Professor Docente"}
               texto={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
@@ -163,7 +163,7 @@ const Resumo = () => {
             <Grade
               titulo1={"Teste"}
               subtitulo={"Junho, 2022 - Atual"}
-              imagem={"1"}
+              imagem={"2"}
               titulo2={"Professor Docente"}
               texto={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."

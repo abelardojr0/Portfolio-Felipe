@@ -7,6 +7,7 @@ export const SobreComponent = styled.section`
   flex-direction: column;
   position: relative;
   padding-bottom: 100px;
+  padding-top: 100px;
 `;
 
 export const SobreTitulo = styled.h1`

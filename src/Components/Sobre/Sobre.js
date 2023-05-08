@@ -38,7 +38,7 @@ const Sobre = () => {
   );
   return (
     <>
-      <SobreComponent>
+      <SobreComponent id="sobre">
         <TituloColorido>Sobre</TituloColorido>
         <SobreTitulo>Quem sou</SobreTitulo>
         <SobreImagem src={foto} alt="foto" />

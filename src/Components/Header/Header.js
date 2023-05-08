@@ -7,12 +7,24 @@ const Header = () => {
       <HeaderComponent>
         <HeaderLogo src={logo} alt="logo" />
         <HeaderLista>
-          <li>Início</li>
-          <li>Sobre</li>
-          <li>Resumo</li>
-          <li>Portfólio</li>
-          <li>Sobre</li>
-          <li>Contato</li>
+          <li>
+            <a href="#inicio">Início</a>
+          </li>
+          <li>
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li>
+            <a href="#resumo">Resumo</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfólio</a>
+          </li>
+          <li>
+            <a href="#servicos">Serviços</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
         </HeaderLista>
       </HeaderComponent>
     </>

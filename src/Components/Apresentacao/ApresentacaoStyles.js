@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import background from "../../Images/background.png";
+import background from "../../Images/background.jpg";
 
 export const ApresentacaoComponent = styled.section`
   height: 100vh;
@@ -8,7 +8,11 @@ export const ApresentacaoComponent = styled.section`
   justify-content: center;
   align-items: center;
 `;
+
 export const ApresentacaoConteudo = styled.div`
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

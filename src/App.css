@@ -136,3 +136,22 @@ table {
 .icone:hover {
   color: #00f3ff;
 }
+
+.servico-icon {
+  color: #00f3ff;
+}
+
+.servico-faixa-icon {
+  color: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #00f3ff;
+}

@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const ResumoComponent = styled.section`
-  /* background-color: #ebebeb; */
-  background-color: #e2e2e2;
+  background-color: #f0f0f0;
   min-height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  padding-top: 100px;
 `;
 
 export const ResumoTitulo = styled.h1`

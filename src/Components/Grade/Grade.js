@@ -1,7 +1,6 @@
 import React from "react";
 import {
   GradeCentro,
-  GradeCentroImagem,
   GradeComponent,
   GradeLadoDireito,
   GradeLadoEsquerdo,
@@ -10,20 +9,24 @@ import {
   GradeTituloDireita,
   GradeTituloEsquerda,
 } from "./GradeStyles";
-import icone1 from "../../Images/icone1.png";
-import icone2 from "../../Images/icone2.png";
-import icone3 from "../../Images/icone3.png";
-import icone4 from "../../Images/icone4.png";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSitemap,
+  faToolbox,
+  faDatabase,
+  faServer,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Grade = ({ titulo1, subtitulo, imagem, titulo2, texto }) => {
   const [icone, setIcone] = React.useState();
 
   React.useEffect(() => {
     const icons = {
-      1: icone1,
-      2: icone2,
-      3: icone3,
-      4: icone4,
+      1: faSitemap,
+      2: faToolbox,
+      3: faDatabase,
+      4: faServer,
     };
 
     setIcone(icons[imagem]);
@@ -37,7 +40,7 @@ const Grade = ({ titulo1, subtitulo, imagem, titulo2, texto }) => {
           <GradeSubtitulo>{subtitulo}</GradeSubtitulo>
         </GradeLadoEsquerdo>
         <GradeCentro>
-          <GradeCentroImagem src={icone} alt="imagem" />
+          <FontAwesomeIcon className="grade-icon" size="2x" icon={icone} />
         </GradeCentro>
         <GradeLadoDireito>
           <GradeTituloDireita>{titulo2}</GradeTituloDireita>

@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import responsivo, { breakpoints } from "../../Responsivo";
 
 export const HeaderComponent = styled.header`
   width: 100%;
+  max-width: 100vw;
   height: 100px;
   color: white;
   background-color: black;
@@ -14,6 +16,9 @@ export const HeaderComponent = styled.header`
 export const HeaderLogo = styled.img`
   max-width: 80px;
   margin-right: 50px;
+  ${responsivo(breakpoints.mobile)} {
+    margin-right: 0px;
+  }
 `;
 export const HeaderLista = styled.ul`
   display: flex;
@@ -22,6 +27,15 @@ export const HeaderLista = styled.ul`
   gap: 40px;
   color: white;
   font-size: 1.2rem;
+  ${responsivo(breakpoints.desktop)} {
+    font-size: 1rem;
+  }
+  ${responsivo(breakpoints.tablet)} {
+    display: none;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    display: none;
+  }
   li {
     text-transform: uppercase;
     cursor: pointer;

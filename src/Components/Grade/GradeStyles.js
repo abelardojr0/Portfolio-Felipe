@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import responsivo, { breakpoints } from "../../Responsivo";
 
 export const GradeComponent = styled.article`
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
+  ${responsivo(breakpoints.mobile)} {
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 export const GradeLadoEsquerdo = styled.div`
   display: flex;
@@ -12,12 +17,19 @@ export const GradeLadoEsquerdo = styled.div`
   align-items: center;
   flex-direction: column;
   padding-top: 20px;
+  ${responsivo(breakpoints.mobile)} {
+    align-items: flex-start;
+  }
 `;
 export const GradeLadoDireito = styled.div`
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   flex-direction: column;
   padding-top: 20px;
+  ${responsivo(breakpoints.mobile)} {
+    align-self: center;
+    padding-top: 0px;
+  }
 `;
 export const GradeTituloEsquerda = styled.h2`
   color: black;
@@ -42,16 +54,13 @@ export const GradeCentro = styled.div`
     width: 2px;
     background-color: #888897;
     height: 300px;
+    ${responsivo(breakpoints.mobile)} {
+      width: 300px;
+      height: 2px;
+      left: 0;
+      top: 22px;
+    }
   }
-`;
-export const GradeCentroImagem = styled.img`
-  max-width: 30px;
-  border-radius: 50%;
-  padding: 0.5rem;
-  object-fit: cover;
-  background-color: #313131;
-  z-index: 10;
-  overflow: hidden;
 `;
 
 export const GradeTituloDireita = styled.h2`
@@ -75,6 +84,9 @@ export const GradeTituloDireita = styled.h2`
 export const GradeTexto = styled.p`
   color: #888897;
   line-height: 1.3;
-  width: 600px;
+  max-width: 600px;
   margin-bottom: 100px;
+  ${responsivo(breakpoints.mobile)} {
+    max-width: 200px;
+  }
 `;

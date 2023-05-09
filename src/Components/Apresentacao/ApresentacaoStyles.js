@@ -1,9 +1,14 @@
 import styled, { keyframes } from "styled-components";
 import background from "../../Images/background.jpg";
+import responsivo, { breakpoints } from "../../Responsivo";
 
 export const ApresentacaoComponent = styled.section`
   height: 100vh;
+  width: 100%;
   background-image: url(${background});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +30,14 @@ export const ConteudoBemVindo = styled.p`
   font-size: 1.5rem;
   text-transform: uppercase;
   margin-bottom: 15px;
+  ${responsivo(breakpoints.tablet)} {
+    font-size: 1.3rem;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    font-size: 1rem;
+    padding-top: 80px;
+    margin-bottom: 40px;
+  }
 `;
 
 const typing = keyframes`
@@ -42,6 +55,12 @@ export const ConteudoEuSou = styled.h1`
   font-size: 6rem;
   font-weight: bold;
   font-family: "Prompt", sans-serif;
+  ${responsivo(breakpoints.tablet)} {
+    font-size: 3.5rem;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    font-size: 2.8rem;
+  }
 `;
 export const ConteudoNome = styled.h1`
   color: white;
@@ -54,13 +73,76 @@ export const ConteudoNome = styled.h1`
     ${blinkCaret} 0.75s step-end infinite;
   border-right: 0.15em solid white;
   text-align: center;
+  ${responsivo(breakpoints.tablet)} {
+    font-size: 3.5rem;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    font-size: 2.8rem;
+  }
 `;
 
-export const ConteudoAreas = styled.p`
+export const ConteudoAreas = styled.ul`
   color: white;
   font-family: "Castoro Titling", cursive;
   margin-top: 40px;
   font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  ${responsivo(breakpoints.tablet)} {
+    font-size: 1rem;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    flex-direction: column;
+  }
+  li {
+    position: relative;
+    &:first-child::after,
+    &:last-child::after {
+      content: "";
+      width: 2px;
+      height: 20px;
+      background-color: white;
+      display: inline-block;
+      position: absolute;
+      top: -2px;
+      left: -10px;
+    }
+    &:first-child::before,
+    &:last-child::before {
+      content: "";
+      width: 2px;
+      height: 20px;
+      background-color: white;
+      display: inline-block;
+      position: absolute;
+      top: -2px;
+      right: -10px;
+    }
+    ${responsivo(breakpoints.mobile)} {
+      &:nth-child(2)::after {
+        content: "";
+        width: 2px;
+        height: 20px;
+        background-color: white;
+        display: inline-block;
+        position: absolute;
+        top: -2px;
+        left: -10px;
+      }
+      &:nth-child(2)::before {
+        content: "";
+        width: 2px;
+        height: 20px;
+        background-color: white;
+        display: inline-block;
+        position: absolute;
+        top: -2px;
+        right: -10px;
+      }
+    }
+  }
 `;
 export const ConteudoBotaoSobre = styled.button`
   padding: 1.2rem 2rem;
@@ -72,6 +154,7 @@ export const ConteudoBotaoSobre = styled.button`
   background-color: transparent;
   margin-top: 40px;
   color: white;
+  border-radius: 10px;
   cursor: pointer;
   transition: border-color 0.2s ease-in-out;
   &:hover {

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import fundo from "../../Images/background2.png";
+import responsivo, { breakpoints } from "../../Responsivo";
 
 export const ServicosComponent = styled.section`
   height: 100vh;
@@ -31,6 +32,9 @@ export const ServicoTitulo = styled.h1`
   margin-top: 15px;
   color: white;
   margin-bottom: 20px;
+  ${responsivo(breakpoints.mobile)} {
+    text-align: center;
+  }
 `;
 
 export const ServicoTexto = styled.p`
@@ -40,15 +44,29 @@ export const ServicoTexto = styled.p`
   max-width: 600px;
   font-family: "Domine", serif;
   text-align: center;
+  ${responsivo(breakpoints.tablet)} {
+    max-width: 450px;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    max-width: 300px;
+  }
 `;
 export const ServicosCarousel = styled.div`
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 1rem;
   margin-top: 100px;
+  ${responsivo(breakpoints.desktop)} {
+    max-width: 700px;
+  }
+  ${responsivo(breakpoints.tablet)} {
+    margin-top: 20px;
+    max-width: 450px;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    max-width: 300px;
+    margin-top: 10px;
+  }
 `;
 export const ServicoCard = styled.div`
   display: flex;
@@ -58,6 +76,9 @@ export const ServicoCard = styled.div`
   gap: 20px;
   margin-left: 30px;
   margin-right: 30px;
+  ${responsivo(breakpoints.mobile)} {
+    gap: 5px;
+  }
 `;
 export const ServicoCardTitulo = styled.h2`
   font-size: 1.8rem;
@@ -65,6 +86,9 @@ export const ServicoCardTitulo = styled.h2`
   margin-top: 15px;
   color: white;
   margin-bottom: 20px;
+  ${responsivo(breakpoints.mobile)} {
+    text-align: center;
+  }
 `;
 
 export const ServicoCardTexto = styled.p`
@@ -75,16 +99,31 @@ export const ServicoCardTexto = styled.p`
   font-family: "Domine", serif;
   text-align: center;
   letter-spacing: 2px;
+  ${responsivo(breakpoints.desktop)} {
+    line-height: 1.2;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    line-height: 1.1;
+    font-size: 0.8rem;
+  }
 `;
 
 export const ServicoFaixa = styled.div`
   width: 100%;
+  max-width: 100vw;
   height: 250px;
   background-color: #00f3ff;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
+  ${responsivo(breakpoints.desktop)} {
+    gap: 20px;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    flex-wrap: wrap;
+    height: 400px;
+  }
 `;
 export const ServicoFaixaItem = styled.div`
   display: flex;
@@ -103,6 +142,12 @@ export const ServicoFaixaItem = styled.div`
     position: absolute;
     top: 0;
     right: -30px;
+    ${responsivo(breakpoints.desktop)} {
+      right: -10px;
+    }
+    ${responsivo(breakpoints.mobile)} {
+      visibility: hidden;
+    }
   }
 `;
 
@@ -119,6 +164,9 @@ export const ServicoFaixaTitulo = styled.h2`
   font-weight: bold;
   margin-top: 15px;
   color: black;
+  ${responsivo(breakpoints.desktop)} {
+    font-size: 1.2rem;
+  }
 `;
 export const ServicoFaixaTexto = styled.p`
   color: #606060;
@@ -128,4 +176,8 @@ export const ServicoFaixaTexto = styled.p`
   text-align: center;
   text-transform: uppercase;
   max-width: 180px;
+  ${responsivo(breakpoints.desktop)} {
+    font-size: 0.7rem;
+    max-width: 100px;
+  }
 `;

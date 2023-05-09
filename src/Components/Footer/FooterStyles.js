@@ -1,14 +1,19 @@
 import styled from "styled-components";
+import responsivo, { breakpoints } from "../../Responsivo";
 
 export const FooterComponent = styled.section`
   background-color: #151515;
-  height: 60vh;
+  height: 100vh;
+  max-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
   padding-top: 80px;
+  ${responsivo(breakpoints.mobile)} {
+    justify-content: space-between;
+  }
 `;
 export const FooterTitulo = styled.h1`
   font-size: 2.5rem;
@@ -50,6 +55,12 @@ export const FooterBotaoEmail = styled.button`
   cursor: pointer;
   &:hover {
     transform: scale(1.1);
+  }
+  ${responsivo(breakpoints.tablet)} {
+    max-width: 350px;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    width: 250px;
   }
 `;
 

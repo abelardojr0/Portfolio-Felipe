@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import responsivo, { breakpoints } from "../../Responsivo";
 
 export const BarraEstrutura = styled.div`
   display: flex;
@@ -14,10 +15,14 @@ export const BarraTitulo = styled.h2`
 `;
 export const BarraFundo = styled.div`
   height: 5px;
-  width: 300px;
+  width: 350px;
+  max-width: 80%;
   background-color: #888897;
   position: relative;
   align-self: center;
+  ${responsivo(breakpoints.desktop)} {
+    width: 250px;
+  }
 `;
 export const BarraFrente = styled.div`
   height: 5px;

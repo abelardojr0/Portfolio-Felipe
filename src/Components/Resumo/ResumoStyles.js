@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import responsivo, { breakpoints } from "../../Responsivo";
 
 export const ResumoComponent = styled.section`
   background-color: #f0f0f0;
@@ -8,6 +9,9 @@ export const ResumoComponent = styled.section`
   align-items: center;
   flex-direction: column;
   padding-top: 100px;
+  ${responsivo(breakpoints.mobile)} {
+    padding-top: 0px;
+  }
 `;
 
 export const ResumoTitulo = styled.h1`
@@ -16,6 +20,9 @@ export const ResumoTitulo = styled.h1`
   margin-top: 15px;
   color: #313131;
   margin-bottom: 20px;
+  ${responsivo(breakpoints.mobile)} {
+    font-size: 2rem;
+  }
 `;
 
 export const ResumoTexto = styled.p`
@@ -25,6 +32,12 @@ export const ResumoTexto = styled.p`
   max-width: 600px;
   font-family: "Domine", serif;
   text-align: center;
+  ${responsivo(breakpoints.tablet)} {
+    max-width: 450px;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    max-width: 300px;
+  }
 `;
 
 export const ResumoTituloColorido = styled.p`
@@ -35,6 +48,13 @@ export const ResumoTituloColorido = styled.p`
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 20px;
+  ${responsivo(breakpoints.tablet)} {
+    max-width: 450px;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    max-width: 300px;
+    text-align: center;
+  }
 `;
 
 //CAROUSEL
@@ -42,4 +62,13 @@ export const ResumoTituloColorido = styled.p`
 export const ResumoCarousel = styled.div`
   max-width: 1000px;
   margin: 0 auto;
+  ${responsivo(breakpoints.desktop)} {
+    max-width: 700px;
+  }
+  ${responsivo(breakpoints.tablet)} {
+    max-width: 480px;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    max-width: 300px;
+  }
 `;

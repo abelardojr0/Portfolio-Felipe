@@ -86,30 +86,16 @@ const Sobre = () => {
                 loop
                 showDots={true}
                 dot={MyDot}
+                mobileBreakpoint={0}
               >
                 <Carousel.Item>
-                  <Barra
-                    base={350}
-                    tamanho={95}
-                    texto={"Português"}
-                    nivel={"Fluente"}
-                  />
+                  <Barra tamanho={95} texto={"Português"} nivel={"Fluente"} />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <Barra
-                    base={350}
-                    tamanho={60}
-                    texto={"Inglês"}
-                    nivel={"Médio"}
-                  />
+                  <Barra tamanho={60} texto={"Inglês"} nivel={"Médio"} />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <Barra
-                    base={350}
-                    tamanho={70}
-                    texto={"Espanhol"}
-                    nivel={"Avançado"}
-                  />
+                  <Barra tamanho={70} texto={"Espanhol"} nivel={"Avançado"} />
                 </Carousel.Item>
               </Carousel>
             </SobrePerfilLinguagem>
@@ -130,6 +116,7 @@ const Sobre = () => {
                 loop
                 showDots={true}
                 dot={MyDot}
+                mobileBreakpoint={0}
               >
                 <Carousel.Item>
                   <Barra tamanho={95} texto={"Python"} nivel={"Médio"} />
@@ -166,7 +153,14 @@ const Sobre = () => {
           </SobreSkills>
         </SobreDivisao>
         <SobreBotoes>
-          <SobreFaleComigo>Fale comigo</SobreFaleComigo>
+          <SobreFaleComigo
+            onClick={() => {
+              const section = document.getElementById("contato");
+              section.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Fale comigo
+          </SobreFaleComigo>
           <SobreCurriculo>Baixe meu CV</SobreCurriculo>
         </SobreBotoes>
       </SobreComponent>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import responsivo, { breakpoints } from "../../Responsivo";
 
 export const SobreComponent = styled.section`
   min-height: 100vh;
@@ -8,6 +9,9 @@ export const SobreComponent = styled.section`
   position: relative;
   padding-bottom: 100px;
   padding-top: 100px;
+  ${responsivo(breakpoints.mobile)} {
+    padding: 0 20px;
+  }
 `;
 
 export const SobreTitulo = styled.h1`
@@ -49,7 +53,19 @@ export const SobreDivisao = styled.div`
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
-  width: 800px;
+  max-width: 800px;
+  ${responsivo(breakpoints.desktop)} {
+    max-width: 700px;
+  }
+  ${responsivo(breakpoints.tablet)} {
+    max-width: 450px;
+    flex-direction: column;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    max-width: 300px;
+    flex-direction: column;
+    align-self: flex-start;
+  }
 `;
 // PERFIL
 export const SobrePerfil = styled.div`
@@ -66,6 +82,9 @@ export const SobrePerfilTitulo = styled.h2`
   text-transform: uppercase;
   color: #313131;
   margin-bottom: 20px;
+  ${responsivo(breakpoints.mobile)} {
+    margin-left: 20px;
+  }
 `;
 
 export const SobrePerfilTexto = styled.p`
@@ -74,6 +93,12 @@ export const SobrePerfilTexto = styled.p`
   color: #888897;
   max-width: 400px;
   margin-bottom: 20px;
+  ${responsivo(breakpoints.desktop)} {
+    max-width: 350px;
+  }
+  ${responsivo(breakpoints.mobile)} {
+    margin-left: 20px;
+  }
 `;
 
 export const SobrePerfilSubtitulo = styled.h3`
@@ -83,15 +108,24 @@ export const SobrePerfilSubtitulo = styled.h3`
   color: #313131;
   font-weight: bold;
   margin-bottom: 5px;
+  ${responsivo(breakpoints.mobile)} {
+    margin-left: 20px;
+  }
 `;
 export const SobrePerfilDados = styled.p`
   font-size: 1.5rem;
   color: #888897;
+  ${responsivo(breakpoints.mobile)} {
+    margin-left: 20px;
+  }
 `;
 
 export const SobrePerfilLinguagem = styled.div`
-  width: 450px;
+  max-width: 450px;
   margin: 0 auto;
+  ${responsivo(breakpoints.desktop)} {
+    max-width: 350px;
+  }
 `;
 
 //SKILLS
@@ -110,6 +144,9 @@ export const SobreSkillsTitulo = styled.h2`
   text-transform: uppercase;
   color: #313131;
   margin-bottom: 20px;
+  ${responsivo(breakpoints.mobile)} {
+    margin-left: 20px;
+  }
 `;
 
 export const SobreSkillsTexto = styled.p`
@@ -118,10 +155,16 @@ export const SobreSkillsTexto = styled.p`
   color: #888897;
   max-width: 400px;
   margin-bottom: 20px;
+  ${responsivo(breakpoints.mobile)} {
+    margin-left: 20px;
+  }
 `;
 export const SobreSkillsOpcoes = styled.div`
   width: 400px;
   margin: 0 auto;
+  ${responsivo(breakpoints.desktop)} {
+    width: 350px;
+  }
 `;
 
 //BOTOES
@@ -133,6 +176,9 @@ export const SobreBotoes = styled.div`
   gap: 40px;
   margin-top: 60px;
   margin-bottom: 100px;
+  ${responsivo(breakpoints.mobile)} {
+    flex-direction: column;
+  }
 `;
 
 export const SobreFaleComigo = styled.button`

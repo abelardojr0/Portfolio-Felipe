@@ -34,7 +34,15 @@ const Resumo = () => {
       </ResumoTexto>
       <ResumoTituloColorido>Experiência</ResumoTituloColorido>
       <ResumoCarousel>
-        <Carousel cols={1} rows={1} gap={10} loop showDots={true} dot={MyDot}>
+        <Carousel
+          cols={1}
+          rows={1}
+          gap={10}
+          loop
+          showDots={true}
+          dot={MyDot}
+          mobileBreakpoint={0}
+        >
           <Carousel.Item>
             <Grade
               titulo1={"Let's Code"}
@@ -61,7 +69,15 @@ const Resumo = () => {
       </ResumoCarousel>
       <ResumoTituloColorido>Cursos</ResumoTituloColorido>
       <ResumoCarousel>
-        <Carousel cols={1} rows={1} gap={10} loop showDots={true} dot={MyDot}>
+        <Carousel
+          cols={1}
+          rows={1}
+          gap={10}
+          loop
+          showDots={true}
+          dot={MyDot}
+          mobileBreakpoint={0}
+        >
           <Carousel.Item>
             <Grade
               titulo1={"Let's Code"}
@@ -89,7 +105,15 @@ const Resumo = () => {
 
       <ResumoTituloColorido>Formações Academicas</ResumoTituloColorido>
       <ResumoCarousel>
-        <Carousel cols={1} rows={1} gap={10} loop showDots={true} dot={MyDot}>
+        <Carousel
+          cols={1}
+          rows={1}
+          gap={10}
+          loop
+          showDots={true}
+          dot={MyDot}
+          mobileBreakpoint={0}
+        >
           <Carousel.Item>
             <Grade
               titulo1={"Let's Code"}
@@ -117,7 +141,15 @@ const Resumo = () => {
 
       <ResumoTituloColorido>Outras Formações</ResumoTituloColorido>
       <ResumoCarousel>
-        <Carousel cols={1} rows={1} gap={10} loop showDots={true} dot={MyDot}>
+        <Carousel
+          cols={1}
+          rows={1}
+          gap={10}
+          loop
+          showDots={true}
+          dot={MyDot}
+          mobileBreakpoint={0}
+        >
           <Carousel.Item>
             <Grade
               titulo1={"Let's Code"}
@@ -147,7 +179,15 @@ const Resumo = () => {
         Premiações & Participações Especiais
       </ResumoTituloColorido>
       <ResumoCarousel>
-        <Carousel cols={1} rows={1} gap={10} loop showDots={true} dot={MyDot}>
+        <Carousel
+          cols={1}
+          rows={1}
+          gap={10}
+          loop
+          showDots={true}
+          dot={MyDot}
+          mobileBreakpoint={0}
+        >
           <Carousel.Item>
             <Grade
               titulo1={"Let's Code"}

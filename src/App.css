@@ -140,6 +140,17 @@ table {
 .servico-icon {
   color: #00f3ff;
 }
+.hamburguer-icon {
+  color: #00f3ff;
+  margin-right: 20px;
+}
+.grade-icon {
+  color: #00f3ff;
+  background-color: #888897;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 3;
+}
 
 .servico-faixa-icon {
   color: black;
@@ -154,4 +165,7 @@ a {
 a:hover {
   text-decoration: underline;
   color: #00f3ff;
+}
+.carousel-portfolio {
+  margin: 0 auto;
 }

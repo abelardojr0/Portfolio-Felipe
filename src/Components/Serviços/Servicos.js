@@ -77,6 +77,21 @@ const Servicos = () => {
   const [numero4, tituloRef4] = useNumeroCrescente(400, 475);
   const [numero5, tituloRef5] = useNumeroCrescente(7400, 7500);
   const [numero6, tituloRef6] = useNumeroCrescente(8900, 9000);
+
+  const [colunas, setColunas] = React.useState(3);
+
+  React.useEffect(() => {
+    if (window.innerWidth < 1000) {
+      setColunas(2);
+    }
+    if (window.innerWidth < 768) {
+      setColunas(1);
+    }
+    if (window.innerWidth < 480) {
+      setColunas(1);
+    }
+  }, []);
+
   return (
     <>
       <ServicosParaNavegacao id="servicos"></ServicosParaNavegacao>
@@ -91,12 +106,14 @@ const Servicos = () => {
           </ServicoTexto>
           <ServicosCarousel>
             <Carousel
-              cols={3}
+              cols={colunas}
               rows={1}
               gap={"60px"}
               loop
               showDots={true}
               dot={MyDot}
+              mobileBreakpoint={0}
+              className="carousel-portfolio"
             >
               <Carousel.Item>
                 <ServicoCard>

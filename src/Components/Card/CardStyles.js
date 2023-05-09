@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import responsivo, { breakpoints } from "../../Responsivo";
 
 export const CardComponent = styled.div`
-  width: 300px;
+  /* width: 300px; */
   height: 400px;
   border-radius: 10px;
   display: flex;
@@ -10,6 +11,10 @@ export const CardComponent = styled.div`
   flex-direction: column;
   cursor: pointer;
   position: relative;
+  /* ${responsivo(breakpoints.mobile)} {
+    width: 200px;
+    height: 300px;
+  } */
 `;
 export const CardTitulo = styled.h1`
   font-size: 1rem;

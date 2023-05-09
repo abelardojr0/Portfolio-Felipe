@@ -23,9 +23,13 @@ const Apresentacao = () => {
           <ConteudoEuSou>Eu sou</ConteudoEuSou>
           <ConteudoNome>Felipe Menezes</ConteudoNome>
           <ConteudoAreas>
-            | Engenheiro de Dados | Cientista de Dados | Arquiteto de Dados |
+            <li>Engenheiro de Dados</li>
+            <li>Cientista de Dados</li>
+            <li>Arquiteto de Dados</li>
           </ConteudoAreas>
-          <ConteudoBotaoSobre>Sobre mim ↴</ConteudoBotaoSobre>
+          <ConteudoBotaoSobre>
+            <a href="#sobre">Sobre mim ↴</a>
+          </ConteudoBotaoSobre>
           <ConteudoSociais>
             <FontAwesomeIcon className="icone" size="3x" icon={faGithub} />
             <FontAwesomeIcon className="icone" size="3x" icon={faLinkedin} />

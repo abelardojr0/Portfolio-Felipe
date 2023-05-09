@@ -62,6 +62,21 @@ const Portfolio = () => {
       setModalAberto6(false);
     }
   };
+  const [colunas, setColunas] = React.useState(3);
+
+  React.useEffect(() => {
+    if (window.innerWidth < 1000) {
+      setColunas(2);
+    }
+    if (window.innerWidth < 768) {
+      setColunas(1);
+    }
+    if (window.innerWidth < 480) {
+      setColunas(1);
+    }
+  }, []);
+
+  console.log(colunas);
   return (
     <>
       <PorfolioComponent id="portfolio">
@@ -76,12 +91,14 @@ const Portfolio = () => {
         </PortfolioTexto>
         <PortfolioCarousel>
           <Carousel
-            cols={3}
+            cols={colunas}
             rows={1}
             gap={"30px"}
             loop
             showDots={true}
             dot={MyDot}
+            mobileBreakpoint={0}
+            className="carousel-portfolio"
           >
             <Carousel.Item>
               <Card

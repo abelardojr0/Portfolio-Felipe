@@ -16,7 +16,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <FooterComponent>
+    <FooterComponent id="contato">
       <TituloColorido>Contato</TituloColorido>
       <FooterTitulo>FALE COMIGO!</FooterTitulo>
       <FooterTexto>Será uma honra poder te ajudar!</FooterTexto>

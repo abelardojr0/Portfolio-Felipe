@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import responsivo, { breakpoints } from "../../Responsivo";
 
 export const ModalComponent = styled.div`
   position: fixed;
@@ -25,6 +26,9 @@ export const ModalCard = styled.div`
   justify-content: center;
   text-align: center;
   position: relative;
+  ${responsivo(breakpoints.mobile)} {
+    max-width: 250px;
+  }
 `;
 export const ModalBotaoFechar = styled.button`
   position: absolute;

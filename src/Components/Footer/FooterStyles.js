@@ -61,6 +61,7 @@ export const FooterBotaoEmail = styled.button`
   }
   ${responsivo(breakpoints.mobile)} {
     width: 250px;
+    font-size: 1.2rem;
   }
 `;
 
